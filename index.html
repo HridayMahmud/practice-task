@@ -15,8 +15,8 @@
     }
 </style>
 </head>
-<div class="px-12">
-<body>
+
+<body class="px-12">
 
        
         <header class="flex  justify-between pt-12" >
@@ -35,14 +35,15 @@
                 <div class="card1 text-center  w-[340px] border-gray-200 rounded-lg border-2 py-10 px-7 ">
                     <figure class="px-12 h-44"><img class="border-dashed border-2 border-gray-300" src="geometry-genius-resources/images/triangle.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                   <h1 class="font-bold text-2xl mt-12 mb-3 " >Triangle</h1>
+                   <h1 id="shapename" class="font-bold text-2xl mt-12 mb-3 " >Triangle</h1>
                    <p class="mb-5">Area(A) = 0.5 x b x h</p>
                   <div class="input-container mb-12">
-                    <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="b">cm
-                    <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="h">cm
+                    <input  class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" required type="text" name="" id="base" placeholder="b">cm
+                    <input  class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" required type="text" name="" id="height" placeholder="h">cm
                   </div>
-                  <button class="bg-[#1090D8] px-28 py-4 rounded-lg ">Calculate</button>
-                    </div>
+                  <button id="btn-triangle" class="bg-[#1090D8] px-28 py-4 rounded-lg ">Calculate</button>
+                    
+                </div>
                   </div>
 
                   <div class="card2 text-center w-[340px] border-gray-200 rounded-lg border-2 py-10 px-7  ">
@@ -51,8 +52,8 @@
                         <h1 class="font-bold text-2xl mt-12 mb-3 " >Rectangle</h1>
                         <p class="mb-5">Area (A) = w x I</p>
                        <div class="input-container mb-12">
-                         <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="b">cm
-                         <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="h">cm
+                         <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="w">cm
+                         <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="I">cm
                        </div>
                        <button class="bg-[#1090D8] px-28 py-4 rounded-lg ">Calculate</button>
                     </div>
@@ -61,8 +62,8 @@
                   <div class="card3 text-center w-[340px] border-gray-200 rounded-lg border-2 py-10 px-7  ">
                     <figure class="px-12 h-44 "><img class="border-dashed border-2" src="geometry-genius-resources/images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h1 class="font-bold text-2xl mt-12 mb-3 " >Triangle</h1>
-                        <p class="mb-5">Area(A) = 0.5 x b x h</p>
+                        <h1 class="font-bold text-2xl mt-12 mb-3 " >Parallelogram</h1>
+                        <p class="mb-5">Area (A) = b x h</p>
                        <div class="input-container mb-12">
                          <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="b">cm
                          <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="h">cm
@@ -74,11 +75,11 @@
                   <div class="card4 text-center w-[340px] border-gray-200 rounded-lg border-2 py-10 px-7 ">
                     <figure class="px-12 h-44 "><img class="border-dashed border-2" src="geometry-genius-resources/images/rhombus.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h1 class="font-bold text-2xl mt-12 mb-3 " >Triangle</h1>
+                        <h1 class="font-bold text-2xl mt-12 mb-3 " >Rhombus</h1>
                         <p class="mb-5">Area(A) = 0.5 x b x h</p>
                        <div class="input-container mb-12">
-                         <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="b">cm
-                         <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="h">cm
+                         <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="d1">cm
+                         <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="d2">cm
                        </div>
                        <button class="bg-[#1090D8] px-28 py-4 rounded-lg ">Calculate</button>
                     </div>
@@ -87,11 +88,11 @@
                   <div class="card5 text-center w-[340px] border-gray-200 rounded-lg border-2 py-10 px-7 ">
                     <figure class="px-12 h-44 "><img class="border-dashed border-2"  src="geometry-genius-resources/images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h1 class="font-bold text-2xl mt-12 mb-3 " >Triangle</h1>
+                        <h1 class="font-bold text-2xl mt-12 mb-3 " >Pentagon</h1>
                         <p class="mb-5">Area(A) = 0.5 x b x h</p>
                        <div class="input-container mb-12">
+                         <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="p">cm
                          <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="b">cm
-                         <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="h">cm
                        </div>
                        <button class="bg-[#1090D8] px-28 py-4 rounded-lg ">Calculate</button>
                     </div>
@@ -100,22 +101,24 @@
                   <div class="card6 text-center w-[340px] border-gray-200 rounded-lg border-2 py-10 px-7 ">
                     <figure class="px-12 h-44 "><img class="border-dashed border-2" src="geometry-genius-resources/images/ellipse.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h1 class="font-bold text-2xl mt-12 mb-3 " >Triangle</h1>
+                        <h1 class="font-bold text-2xl mt-12 mb-3 " >Ellipse</h1>
                         <p class="mb-5">Area(A) = 0.5 x b x h</p>
                        <div class="input-container mb-12">
+                         <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="a">cm
                          <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="b">cm
-                         <input class="bg-[#F1F1F1] w-20 py-1 outline-0 rounded-[4px]" type="text" name="" id="" placeholder="h">cm
                        </div>
                        <button class="bg-[#1090D8] px-28 py-4 rounded-lg ">Calculate</button>
                     </div>
                   </div>
             </div>
-            <div class="mt-2 md:mt-2 lg:mt-0 text-container w-[330px] h-[450px] border-gray-200 border-2 rounded-lg">
+            <div id="triangle-area" class="p-4  text-center mt-2 md:mt-2 lg:mt-0 text-container w-[330px] h-[450px] border-gray-200 border-2 rounded-lg">
                 <h3 class="underline text-[20px] font-bold text-gray-600 text-center">Area Calculation</h3>
+           
+            
             </div>
            </div>
         </main>
-    
+    <script src="sample.js"></script>
 </body>
-</div>
+
 </html>
