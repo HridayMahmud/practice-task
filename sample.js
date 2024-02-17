@@ -1,7 +1,7 @@
 const b = document.getElementById('base');
 const h = document.getElementById('height');
 const button1 = document.getElementById('btn-triangle');
-const triangle_area = document.getElementById('triangle-area');
+const area = document.getElementById('area');
 const shape = document.getElementById('shapename');
 button1.addEventListener('click',function(){
 const result1 = document.createElement('h1');
@@ -19,8 +19,9 @@ else{
  result1.style.fontSize = "20px";
  result1.style.borderRadius = "10px";
  result1.style.marginBottom = "10px";
+ result1.style.marginTop = "10px";
  b.value =" ";
  h.value = " ";
 
- triangle_area.appendChild(result1);
+ area.appendChild(result1);
 });
