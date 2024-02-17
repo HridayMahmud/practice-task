@@ -9,7 +9,7 @@ if(b.value===null || h.value ===null){
     result1.innerText = "input value";
 }
 else{
-    result1.innerText = shape.innerText+" "+"area is:"+b.value * h.value * 0.5;
+    result1.innerText = shape.innerText+" "+"area is:"+b.value * h.value * 0.5+"cm";
 }
  result1.style.color = "white"
  result1.style.backgroundColor ="green";
